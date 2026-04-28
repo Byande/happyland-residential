@@ -10,25 +10,34 @@ const CONTACT_EMAIL = 'byandepaul@gmail.com';
 
 const LOGEMENTS = [
   // STAINS — Résidence Oasis
-  { id: 'ST-01_Marry_Me',        code: 'ST-01', site: 'ST', siteLabel: 'Stains',           name: 'Marry Me',        type: 'Suite',       theme: 'Romantique · Couples',    surface: 18, capacite: 2, etage: 'RDC', bs: 55, hs: 75, sem: 350, mois: 1200, menage: 30, caution: 200, desc: 'Suite romantique et cosy à 30 min de Paris, parfaite pour couples. Lit queen size, kitchenette, accès cour extérieure.' },
-  { id: 'ST-02_Moon_Ray',        code: 'ST-02', site: 'ST', siteLabel: 'Stains',           name: 'Moon Ray',        type: 'Chambre',     theme: 'Lune · Sérénité',          surface: 12, capacite: 2, etage: 'R+1', bs: 35, hs: 50, sem: 230, mois: 850,  menage: 20, caution: 150, desc: 'Chambre cosy thème "Lune" avec accès cour. Idéale solo ou couples.' },
-  { id: 'ST-03_Pepsy_Blue',      code: 'ST-03', site: 'ST', siteLabel: 'Stains',           name: 'Pepsy Blue',      type: 'Chambre',     theme: 'Bleu · Fraîcheur',         surface: 15, capacite: 2, etage: 'R+1', bs: 35, hs: 50, sem: 230, mois: 850,  menage: 20, caution: 150, desc: 'Chambre lumineuse aux tons bleus, accès cour. Ambiance fraîche et apaisante.' },
-  { id: 'ST-04_Hibiscus',        code: 'ST-04', site: 'ST', siteLabel: 'Stains',           name: 'Hibiscus',        type: 'Chambre',     theme: 'Floral · Tropical',        surface: 12, capacite: 2, etage: 'R+1', bs: 35, hs: 50, sem: 230, mois: 850,  menage: 20, caution: 150, desc: 'Chambre privative thème hibiscus, Résidence Oasis. Accès cour commune.' },
-  { id: 'ST-05_Pinky_Elisabeth', code: 'ST-05', site: 'ST', siteLabel: 'Stains',           name: 'Pinky Elisabeth', type: 'Chambre',     theme: 'Rose · Élégance',          surface: 12, capacite: 2, etage: 'R+1', bs: 35, hs: 50, sem: 230, mois: 850,  menage: 20, caution: 150, desc: 'Chambre élégante aux tons rosés, douce et raffinée. Accès cour.' },
-  { id: 'ST-06_Serenity',        code: 'ST-06', site: 'ST', siteLabel: 'Stains',           name: 'Serenity',        type: 'Chambre',     theme: 'Zen · Apaisement',         surface: 12, capacite: 2, etage: 'R+1', bs: 35, hs: 50, sem: 230, mois: 850,  menage: 20, caution: 150, desc: 'Chambre privative au cœur d\'une villa à Stains. Stade de France 20 min, Arc de Triomphe 25 min.' },
-  { id: 'ST-07_Allamanda',       code: 'ST-07', site: 'ST', siteLabel: 'Stains',           name: 'Allamanda',       type: 'Appartement', theme: 'Tropical · Famille',       surface: 28, capacite: 4, etage: 'RDC', bs: 70, hs: 95, sem: 450, mois: 1500, menage: 40, caution: 250, desc: 'Appartement 2 chambres avec accès cour, idéal famille ou groupe d\'amis.' },
-  { id: 'ST-08_Arum',            code: 'ST-08', site: 'ST', siteLabel: 'Stains',           name: 'Arum',            type: 'Studio',      theme: 'Floral blanc · Pureté',    surface: 25, capacite: 4, etage: 'R+1', bs: 55, hs: 75, sem: 360, mois: 1200, menage: 30, caution: 200, desc: 'Studio cosy indépendant, décoration soignée. 25 min de Paris.' },
+  { id: 'ST-01_Marry_Me',        code: 'ST-01', site: 'ST', siteLabel: 'Stains',           name: 'Marry Me',        type: 'Suite',       theme: 'Romantique · Couples',    surface: 18, capacite: 2, etage: 'RDC', bs: 55, hs: 75, sem: 350, mois: 1200, menage: 30, caution: 200, photos: 21, desc: 'Suite romantique et cosy à 30 min de Paris, parfaite pour couples. Lit queen size, kitchenette, accès cour extérieure.' },
+  { id: 'ST-02_Moon_Ray',        code: 'ST-02', site: 'ST', siteLabel: 'Stains',           name: 'Moon Ray',        type: 'Chambre',     theme: 'Lune · Sérénité',          surface: 12, capacite: 2, etage: 'R+1', bs: 35, hs: 50, sem: 230, mois: 850,  menage: 20, caution: 150, photos: 25, desc: 'Chambre cosy thème "Lune" avec accès cour. Idéale solo ou couples.' },
+  { id: 'ST-03_Pepsy_Blue',      code: 'ST-03', site: 'ST', siteLabel: 'Stains',           name: 'Pepsy Blue',      type: 'Chambre',     theme: 'Bleu · Fraîcheur',         surface: 15, capacite: 2, etage: 'R+1', bs: 35, hs: 50, sem: 230, mois: 850,  menage: 20, caution: 150, photos: 25, desc: 'Chambre lumineuse aux tons bleus, accès cour. Ambiance fraîche et apaisante.' },
+  { id: 'ST-04_Hibiscus',        code: 'ST-04', site: 'ST', siteLabel: 'Stains',           name: 'Hibiscus',        type: 'Chambre',     theme: 'Floral · Tropical',        surface: 12, capacite: 2, etage: 'R+1', bs: 35, hs: 50, sem: 230, mois: 850,  menage: 20, caution: 150, photos: 24, desc: 'Chambre privative thème hibiscus, Résidence Oasis. Accès cour commune.' },
+  { id: 'ST-05_Pinky_Elisabeth', code: 'ST-05', site: 'ST', siteLabel: 'Stains',           name: 'Pinky Elisabeth', type: 'Chambre',     theme: 'Rose · Élégance',          surface: 12, capacite: 2, etage: 'R+1', bs: 35, hs: 50, sem: 230, mois: 850,  menage: 20, caution: 150, photos: 24, desc: 'Chambre élégante aux tons rosés, douce et raffinée. Accès cour.' },
+  { id: 'ST-06_Serenity',        code: 'ST-06', site: 'ST', siteLabel: 'Stains',           name: 'Serenity',        type: 'Chambre',     theme: 'Zen · Apaisement',         surface: 12, capacite: 2, etage: 'R+1', bs: 35, hs: 50, sem: 230, mois: 850,  menage: 20, caution: 150, photos: 28, desc: 'Chambre privative au cœur d\'une villa à Stains. Stade de France 20 min, Arc de Triomphe 25 min.' },
+  { id: 'ST-07_Allamanda',       code: 'ST-07', site: 'ST', siteLabel: 'Stains',           name: 'Allamanda',       type: 'Appartement', theme: 'Tropical · Famille',       surface: 28, capacite: 4, etage: 'RDC', bs: 70, hs: 95, sem: 450, mois: 1500, menage: 40, caution: 250, photos: 24, desc: 'Appartement 2 chambres avec accès cour, idéal famille ou groupe d\'amis.' },
+  { id: 'ST-08_Arum',            code: 'ST-08', site: 'ST', siteLabel: 'Stains',           name: 'Arum',            type: 'Studio',      theme: 'Floral blanc · Pureté',    surface: 25, capacite: 4, etage: 'R+1', bs: 55, hs: 75, sem: 360, mois: 1200, menage: 30, caution: 200, photos: 1,  desc: 'Studio cosy indépendant, décoration soignée. 25 min de Paris.' },
 
   // ÉPINAY — Résidence Bosquera
-  { id: 'EP-01_Pepsy',           code: 'EP-01', site: 'EP', siteLabel: 'Épinay-sur-Seine', name: 'Pepsy',           type: 'Chambre',     theme: 'Fraîcheur · Modernité',    surface: 13, capacite: 2, etage: 'R+1', bs: 35, hs: 50, sem: 230, mois: 850,  menage: 20, caution: 150, desc: 'Chambre moderne, Résidence Bosquera. Accès cour intérieure. Proche RER C.' },
-  { id: 'EP-02_Zen',             code: 'EP-02', site: 'EP', siteLabel: 'Épinay-sur-Seine', name: 'Zen',             type: 'Chambre',     theme: 'Zen · Méditation',         surface: 13, capacite: 2, etage: 'R+1', bs: 35, hs: 50, sem: 230, mois: 850,  menage: 20, caution: 150, desc: 'Chambre à l\'ambiance zen et méditative. Parfaite pour un séjour apaisant.' },
-  { id: 'EP-03_The_Executive',   code: 'EP-03', site: 'EP', siteLabel: 'Épinay-sur-Seine', name: 'The Executive',   type: 'Chambre',     theme: 'Business · Executive',     surface: 18, capacite: 2, etage: 'R+2', bs: 50, hs: 70, sem: 320, mois: 1100, menage: 30, caution: 200, desc: 'Chambre Executive haut de gamme. Bureau équipé, idéale business travellers.' },
-  { id: 'EP-04_The_Queen',       code: 'EP-04', site: 'EP', siteLabel: 'Épinay-sur-Seine', name: 'The Queen',       type: 'Chambre',     theme: 'Royal · Premium',          surface: 13, capacite: 2, etage: 'R+2', bs: 40, hs: 55, sem: 260, mois: 900,  menage: 25, caution: 200, desc: 'Décoration royale et raffinée. Idéale couples exigeants à 30 min de Paris.' },
+  { id: 'EP-01_Pepsy',           code: 'EP-01', site: 'EP', siteLabel: 'Épinay-sur-Seine', name: 'Pepsy',           type: 'Chambre',     theme: 'Fraîcheur · Modernité',    surface: 13, capacite: 2, etage: 'R+1', bs: 35, hs: 50, sem: 230, mois: 850,  menage: 20, caution: 150, photos: 11, desc: 'Chambre moderne, Résidence Bosquera. Accès cour intérieure. Proche RER C.' },
+  { id: 'EP-02_Zen',             code: 'EP-02', site: 'EP', siteLabel: 'Épinay-sur-Seine', name: 'Zen',             type: 'Chambre',     theme: 'Zen · Méditation',         surface: 13, capacite: 2, etage: 'R+1', bs: 35, hs: 50, sem: 230, mois: 850,  menage: 20, caution: 150, photos: 45, desc: 'Chambre à l\'ambiance zen et méditative. Parfaite pour un séjour apaisant.' },
+  { id: 'EP-03_The_Executive',   code: 'EP-03', site: 'EP', siteLabel: 'Épinay-sur-Seine', name: 'The Executive',   type: 'Chambre',     theme: 'Business · Executive',     surface: 18, capacite: 2, etage: 'R+2', bs: 50, hs: 70, sem: 320, mois: 1100, menage: 30, caution: 200, photos: 35, desc: 'Chambre Executive haut de gamme. Bureau équipé, idéale business travellers.' },
+  { id: 'EP-04_The_Queen',       code: 'EP-04', site: 'EP', siteLabel: 'Épinay-sur-Seine', name: 'The Queen',       type: 'Chambre',     theme: 'Royal · Premium',          surface: 13, capacite: 2, etage: 'R+2', bs: 40, hs: 55, sem: 260, mois: 900,  menage: 25, caution: 200, photos: 20, desc: 'Décoration royale et raffinée. Idéale couples exigeants à 30 min de Paris.' },
 
   // HOUILLES — Résidence Houilles
-  { id: 'HO-01_Azur',            code: 'HO-01', site: 'HO', siteLabel: 'Houilles',         name: 'Azur',            type: 'Studio',      theme: 'Bleu azur · Méditerranée', surface: 27, capacite: 3, etage: 'R+1', bs: 55, hs: 75, sem: 360, mois: 1200, menage: 30, caution: 200, desc: 'Studio de charme aux tons bleu azur. Espace travail et détente. Proche RER A, 20 min La Défense.' },
-  { id: 'HO-02_Kalyvia',         code: 'HO-02', site: 'HO', siteLabel: 'Houilles',         name: 'Kalyvia',         type: 'Studio',      theme: 'Grec · Intimité',          surface: 16, capacite: 2, etage: 'R+1', bs: 45, hs: 60, sem: 280, mois: 950,  menage: 25, caution: 200, desc: 'Studio intimiste cosy, inspiration grecque. Cocooning à 20 min de La Défense.' },
+  { id: 'HO-01_Azur',            code: 'HO-01', site: 'HO', siteLabel: 'Houilles',         name: 'Azur',            type: 'Studio',      theme: 'Bleu azur · Méditerranée', surface: 27, capacite: 3, etage: 'R+1', bs: 55, hs: 75, sem: 360, mois: 1200, menage: 30, caution: 200, photos: 16, desc: 'Studio de charme aux tons bleu azur. Espace travail et détente. Proche RER A, 20 min La Défense.' },
+  { id: 'HO-02_Kalyvia',         code: 'HO-02', site: 'HO', siteLabel: 'Houilles',         name: 'Kalyvia',         type: 'Studio',      theme: 'Grec · Intimité',          surface: 16, capacite: 2, etage: 'R+1', bs: 45, hs: 60, sem: 280, mois: 950,  menage: 25, caution: 200, photos: 5,  desc: 'Studio intimiste cosy, inspiration grecque. Cocooning à 20 min de La Défense.' },
 ];
+
+// Helper: liste des URLs photos d'un logement
+function photoUrls(l) {
+  const urls = [];
+  for (let i = 1; i <= l.photos; i++) {
+    urls.push(`/photos/${l.id}/${String(i).padStart(2, '0')}.jpg`);
+  }
+  return urls;
+}
 
 // =========================================================
 // 1. Générer la grille des 14 logements
@@ -40,7 +49,8 @@ function renderGrid() {
     <article class="logement-card" data-site="${l.site}" data-id="${l.id}">
       <div class="logement-thumb">
         <span class="logement-tag">${l.code}</span>
-        <img src="/photos/${l.id}.jpg" alt="${l.name} — ${l.siteLabel}" loading="lazy" />
+        ${l.photos > 1 ? `<span class="logement-photo-count">${l.photos} photos</span>` : ''}
+        <img src="/photos/${l.id}/01.jpg" alt="${l.name} — ${l.siteLabel}" loading="lazy" />
       </div>
       <div class="logement-body">
         <h3>${l.name}</h3>
@@ -118,9 +128,24 @@ function openModal(logementId) {
   if (!l) return;
   const modal = document.getElementById('modal');
   const content = document.getElementById('modalContent');
+  const photos = photoUrls(l);
+  const galleryId = `gal-${l.id}`;
   content.innerHTML = `
-    <div class="modal-hero">
-      <img src="/photos/${l.id}.jpg" alt="${l.name}" />
+    <div class="gallery" id="${galleryId}">
+      <div class="gallery-main">
+        <button type="button" class="gallery-nav gallery-prev" aria-label="Photo précédente">‹</button>
+        <img src="${photos[0]}" alt="${l.name} — photo 1/${photos.length}" class="gallery-image" />
+        <button type="button" class="gallery-nav gallery-next" aria-label="Photo suivante">›</button>
+        <span class="gallery-counter">1 / ${photos.length}</span>
+      </div>
+      ${photos.length > 1 ? `
+      <div class="gallery-thumbs">
+        ${photos.map((src, i) => `
+          <button type="button" class="gallery-thumb${i === 0 ? ' active' : ''}" data-index="${i}" aria-label="Photo ${i + 1}">
+            <img src="${src}" alt="" loading="lazy" />
+          </button>
+        `).join('')}
+      </div>` : ''}
     </div>
     <div class="modal-body">
       <p class="modal-tag">${l.code} · ${l.siteLabel}</p>
@@ -157,6 +182,44 @@ function openModal(logementId) {
   modal.setAttribute('aria-hidden', 'false');
   document.body.style.overflow = 'hidden';
 
+  // Galerie : navigation prev/next + thumbnails
+  if (photos.length > 1) {
+    let current = 0;
+    const mainImg = content.querySelector('.gallery-image');
+    const counter = content.querySelector('.gallery-counter');
+    const thumbs = content.querySelectorAll('.gallery-thumb');
+    const prev = content.querySelector('.gallery-prev');
+    const next = content.querySelector('.gallery-next');
+
+    const goTo = (idx) => {
+      current = (idx + photos.length) % photos.length;
+      mainImg.src = photos[current];
+      mainImg.alt = `${l.name} — photo ${current + 1}/${photos.length}`;
+      counter.textContent = `${current + 1} / ${photos.length}`;
+      thumbs.forEach((t, i) => t.classList.toggle('active', i === current));
+      const activeThumb = thumbs[current];
+      if (activeThumb) activeThumb.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    };
+
+    prev.addEventListener('click', () => goTo(current - 1));
+    next.addEventListener('click', () => goTo(current + 1));
+    thumbs.forEach((t, i) => t.addEventListener('click', () => goTo(i)));
+    mainImg.addEventListener('click', () => openLightbox(photos, current));
+
+    // Navigation clavier (← → dans le modal)
+    const onKey = (e) => {
+      if (modal.getAttribute('aria-hidden') !== 'false') return;
+      if (e.key === 'ArrowLeft') goTo(current - 1);
+      else if (e.key === 'ArrowRight') goTo(current + 1);
+    };
+    document.addEventListener('keydown', onKey);
+    modal.dataset.cleanupKey = '1';
+    modal._cleanup = () => document.removeEventListener('keydown', onKey);
+  } else {
+    const mainImg = content.querySelector('.gallery-image');
+    if (mainImg) mainImg.addEventListener('click', () => openLightbox(photos, 0));
+  }
+
   // Bouton "Réserver ce logement" : pré-sélectionne le logement dans le formulaire
   const reserveBtn = content.querySelector('[data-reserve]');
   if (reserveBtn) {
@@ -178,6 +241,57 @@ function closeModal() {
   const modal = document.getElementById('modal');
   modal.setAttribute('aria-hidden', 'true');
   document.body.style.overflow = '';
+  if (typeof modal._cleanup === 'function') {
+    modal._cleanup();
+    modal._cleanup = null;
+  }
+}
+
+// =========================================================
+// 3b. Lightbox (zoom plein écran d'une photo)
+// =========================================================
+function openLightbox(photos, startIndex = 0) {
+  let current = startIndex;
+  const lb = document.createElement('div');
+  lb.className = 'lightbox';
+  lb.innerHTML = `
+    <button type="button" class="lightbox-close" aria-label="Fermer">×</button>
+    <button type="button" class="lightbox-nav lightbox-prev" aria-label="Photo précédente">‹</button>
+    <img src="${photos[current]}" alt="" class="lightbox-image" />
+    <button type="button" class="lightbox-nav lightbox-next" aria-label="Photo suivante">›</button>
+    <span class="lightbox-counter">${current + 1} / ${photos.length}</span>
+  `;
+  document.body.appendChild(lb);
+  document.body.style.overflow = 'hidden';
+
+  const img = lb.querySelector('.lightbox-image');
+  const counter = lb.querySelector('.lightbox-counter');
+
+  const goTo = (idx) => {
+    current = (idx + photos.length) % photos.length;
+    img.src = photos[current];
+    counter.textContent = `${current + 1} / ${photos.length}`;
+  };
+
+  const close = () => {
+    lb.remove();
+    document.removeEventListener('keydown', onKey);
+    if (!document.getElementById('modal')?.matches('[aria-hidden="false"]')) {
+      document.body.style.overflow = '';
+    }
+  };
+
+  const onKey = (e) => {
+    if (e.key === 'Escape') close();
+    else if (e.key === 'ArrowLeft') goTo(current - 1);
+    else if (e.key === 'ArrowRight') goTo(current + 1);
+  };
+
+  lb.querySelector('.lightbox-close').addEventListener('click', close);
+  lb.querySelector('.lightbox-prev').addEventListener('click', () => goTo(current - 1));
+  lb.querySelector('.lightbox-next').addEventListener('click', () => goTo(current + 1));
+  lb.addEventListener('click', (e) => { if (e.target === lb) close(); });
+  document.addEventListener('keydown', onKey);
 }
 
 function setupModal() {
