@@ -1,9 +1,9 @@
 {
-  "name": "maison-aurele",
+  "name": "happyland-residential",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Maison Aurèle — site vitrine du restaurant gastronomique parisien",
+  "description": "HappyLand Hollyday Residential — Location courte durée à Stains, Épinay-sur-Seine et Houilles. 14 logements à 30 min de Paris.",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

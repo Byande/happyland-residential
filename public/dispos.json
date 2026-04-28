@@ -1,0 +1,20 @@
+{
+  "_README": "Liste des périodes INDISPONIBLES pour chaque logement. Format ISO YYYY-MM-DD. Pour bloquer une période, ajouter un objet { start, end, motif }. La date de fin est NON incluse (ex: client part le 7 → end: '2026-05-07' = jours 1 au 6 bloqués).",
+  "_updated": "2026-04-28",
+  "logements": {
+    "ST-01_Marry_Me": { "indisponible": [] },
+    "ST-02_Moon_Ray": { "indisponible": [] },
+    "ST-03_Pepsy_Blue": { "indisponible": [] },
+    "ST-04_Hibiscus": { "indisponible": [] },
+    "ST-05_Pinky_Elisabeth": { "indisponible": [] },
+    "ST-06_Serenity": { "indisponible": [] },
+    "ST-07_Allamanda": { "indisponible": [] },
+    "ST-08_Arum": { "indisponible": [] },
+    "EP-01_Pepsy": { "indisponible": [] },
+    "EP-02_Zen": { "indisponible": [] },
+    "EP-03_The_Executive": { "indisponible": [] },
+    "EP-04_The_Queen": { "indisponible": [] },
+    "HO-01_Azur": { "indisponible": [] },
+    "HO-02_Kalyvia": { "indisponible": [] }
+  }
+}
